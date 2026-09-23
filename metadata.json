@@ -1,0 +1,6 @@
+{
+  "name": "Bilingual Rainbow Daycare",
+  "description": "Loving bilingual (English & Spanish) daycare in Roslindale, Boston MA for ages 1-5.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

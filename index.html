@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bilingual Rainbow Daycare | Spanish & English Daycare Roslindale MA</title>
+  <meta name="description" content="Loving bilingual (English & Spanish) daycare in Roslindale, Boston MA for ages 1-5. Certified, home-like environment with full immersion play & learning." />
+  <meta property="og:title" content="Bilingual Rainbow Daycare | Roslindale MA" />
+  <meta property="og:description" content="Where Little Hearts Learn Two Languages! Loving bilingual daycare in Roslindale, Hyde Park & Mattapan." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Google Fonts: Nunito & Poppins rounded -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Nunito', 'sans-serif'],
+            display: ['Poppins', 'sans-serif'],
+          },
+          colors: {
+            rainbowRed: '#FF5757',
+            rainbowOrange: '#FFB936',
+            rainbowYellow: '#FFEB3B',
+            rainbowGreen: '#4CAF50',
+            rainbowBlue: '#2196F3',
+            rainbowPurple: '#9C27B0',
+            payGreen: '#00C853',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Nunito', sans-serif;
+      background-color: #FAFCFF;
+      color: #2D3748;
+    }
+
+    /* Rainbow Gradient Text & Background Utilities */
+    .rainbow-text {
+      background: linear-gradient(135deg, #FF5757, #FFB936, #4CAF50, #2196F3, #9C27B0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .rainbow-border {
+      border-image: linear-gradient(to right, #FF5757, #FFB936, #4CAF50, #2196F3, #9C27B0) 1;
+    }
+
+    .rainbow-gradient-bg {
+      background: linear-gradient(135deg, rgba(255,87,87,0.08), rgba(255,185,54,0.08), rgba(76,175,80,0.08), rgba(33,150,243,0.08), rgba(156,39,176,0.08));
+    }
+
+    .rainbow-bar {
+      height: 6px;
+      background: linear-gradient(90deg, #FF5757, #FFB936, #FFEB3B, #4CAF50, #2196F3, #9C27B0);
+    }
+
+    .badge-shadow {
+      box-shadow: 0 4px 20px -2px rgba(33, 150, 243, 0.15);
+    }
+
+    .pulse-glow {
+      animation: pulseGlow 2s infinite;
+    }
+
+    @keyframes pulseGlow {
+      0% { box-shadow: 0 0 0 0 rgba(0, 200, 83, 0.4); }
+      70% { box-shadow: 0 0 0 14px rgba(0, 200, 83, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(0, 200, 83, 0); }
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased pb-16 md:pb-0">
+
+  <!-- Top Rainbow Decorative Bar -->
+  <div class="rainbow-bar"></div>
+
+  <!-- 1. HEADER (Sticky) -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-2">
+      
+      <!-- Left: Logo -->
+      <a href="#" class="flex items-center gap-2 group shrink-0">
+        <span class="text-3xl sm:text-4xl transition-transform group-hover:scale-110 duration-200">🌈</span>
+        <div class="flex flex-col">
+          <span class="font-black text-lg sm:text-2xl tracking-tight rainbow-text font-display leading-tight">
+            Bilingual Rainbow Daycare
+          </span>
+          <span class="text-[11px] text-slate-500 font-semibold tracking-wide hidden sm:inline">
+            Roslindale, Boston MA
+          </span>
+        </div>
+      </a>
+
+      <!-- Right: Controls -->
+      <div class="flex items-center gap-2 sm:gap-4 shrink-0">
+        
+        <!-- Language Switcher Button [EN | ES] -->
+        <button id="langToggleBtn" onclick="toggleLanguage()" class="flex items-center bg-slate-100 hover:bg-slate-200 text-slate-700 font-extrabold text-xs sm:text-sm px-3 py-2 rounded-full transition-all border border-slate-200 shadow-inner">
+          <span id="langEnLabel" class="text-blue-600 font-black">EN</span>
+          <span class="mx-1 text-slate-300">|</span>
+          <span id="langEsLabel" class="text-slate-400 font-bold">ES</span>
+        </button>
+
+        <!-- Phone Number -->
+        <a href="tel:+18573897214" class="hidden lg:flex items-center gap-1.5 text-sm font-bold text-slate-700 hover:text-blue-600 transition-colors bg-blue-50 px-3.5 py-2 rounded-full border border-blue-100">
+          <span class="text-base">📞</span>
+          <span>(857) 389-7214</span>
+        </a>
+
+        <!-- GREEN "Pay $200 & Go Live" Button -->
+        <a href="#pay" class="bg-emerald-500 hover:bg-emerald-600 text-white font-extrabold text-xs sm:text-sm px-3.5 sm:px-5 py-2.5 rounded-full shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5 flex items-center gap-1.5 shrink-0">
+          <span class="hidden xs:inline">⚡</span>
+          <span data-en="Pay $200 & Go Live" data-es="Pagar $200 y Publicar">Pay $200 & Go Live</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- 2. HERO -->
+  <section class="relative overflow-hidden pt-8 pb-16 lg:pt-14 lg:pb-24 rainbow-gradient-bg">
+    <!-- Decorative background blobs -->
+    <div class="absolute -top-24 -left-24 w-96 h-96 bg-red-100/60 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+    <div class="absolute top-1/2 -right-24 w-96 h-96 bg-blue-100/60 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <!-- Left Hero Content -->
+        <div class="lg:col-span-7 text-center lg:text-left">
+          
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/90 border border-amber-200 text-amber-900 text-xs sm:text-sm font-bold mb-6 shadow-sm">
+            <span class="text-base">👶</span>
+            <span data-en="Roslindale's Premier Spanish & English Daycare" data-es="La Guardería Bilingüe Principal de Roslindale">Roslindale's Premier Spanish & English Daycare</span>
+          </div>
+
+          <h1 id="heroHeadline" class="text-3xl sm:text-5xl lg:text-6xl font-black text-slate-900 font-display leading-tight tracking-tight mb-6">
+            Where Little Hearts Learn Two Languages! 🌈
+          </h1>
+
+          <p id="heroSub" class="text-lg sm:text-xl text-slate-600 font-medium leading-relaxed mb-8 max-w-2xl mx-auto lg:mx-0">
+            Loving Bilingual Daycare in Roslindale - English & Spanish Daily | Ages 1-5
+          </p>
+
+          <!-- 2 CTAs -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-10">
+            <a href="https://wa.me/18573897214" target="_blank" class="w-full sm:w-auto bg-emerald-500 hover:bg-emerald-600 text-white font-black text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 flex items-center justify-center gap-3">
+              <span class="text-2xl">📱</span>
+              <span data-en="WhatsApp Us" data-es="Escríbenos por WhatsApp">WhatsApp Us</span>
+            </a>
+            
+            <a href="#about" class="w-full sm:w-auto bg-white hover:bg-slate-100 text-slate-800 font-bold text-lg px-8 py-4 rounded-full shadow-md hover:shadow-lg transition-all border border-slate-200 flex items-center justify-center gap-2">
+              <span class="text-xl">📚</span>
+              <span data-en="See Our Daycare" data-es="Conoce Nuestra Guardería">See Our Daycare</span>
+            </a>
+          </div>
+
+          <!-- Trust Badges -->
+          <div class="pt-6 border-t border-slate-200/80 flex flex-wrap items-center justify-center lg:justify-start gap-4 text-xs sm:text-sm font-extrabold text-slate-700">
+            <div class="flex items-center gap-1.5 bg-white/80 px-3.5 py-1.5 rounded-xl border border-slate-200/60 shadow-xs">
+              <span class="text-emerald-500 font-black">✓</span>
+              <span data-en="Bilingual Curriculum" data-es="Currículo Bilingüe">Bilingual Curriculum</span>
+            </div>
+            <div class="flex items-center gap-1.5 bg-white/80 px-3.5 py-1.5 rounded-xl border border-slate-200/60 shadow-xs">
+              <span class="text-emerald-500 font-black">✓</span>
+              <span data-en="Licensed & Certified" data-es="Licenciada y Certificada">Licensed & Certified</span>
+            </div>
+            <div class="flex items-center gap-1.5 bg-white/80 px-3.5 py-1.5 rounded-xl border border-slate-200/60 shadow-xs">
+              <span class="text-emerald-500 font-black">✓</span>
+              <span data-en="5-Star Parents Love" data-es="Amada por Padres (5 Estrellas)">5-Star Parents Love</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Hero Visual -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            
+            <!-- Colorful decorative border wrapper -->
+            <div class="p-3 bg-white rounded-3xl shadow-2xl border-4 border-amber-300 relative">
+              <div class="overflow-hidden rounded-2xl relative aspect-[4/3] bg-slate-100">
+                <img 
+                  src="/src/assets/images/daycare_hero_kids_1790135397214.jpg" 
+                  alt="Happy kids learning in bilingual daycare classroom Roslindale" 
+                  class="w-full h-full object-cover transform hover:scale-105 transition-duration-500 transition-transform"
+                  onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-pink-100 to-blue-100 text-slate-700 p-6 text-center\'><span class=\'text-5xl mb-2\'>🌈👶</span><span class=\'font-black text-lg\'>Bilingual Rainbow Daycare</span></div>';"
+                />
+                
+                <div class="absolute bottom-3 left-3 right-3 bg-white/90 backdrop-blur-md p-3.5 rounded-xl shadow-lg border border-white/50 flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-full bg-amber-400 flex items-center justify-center text-xl shrink-0">
+                    ❤️
+                  </div>
+                  <div>
+                    <div class="text-xs font-black text-slate-900" data-en="Loving Roslindale Home Environment" data-es="Ambiente Familiar y Cálido en Roslindale">Loving Roslindale Home Environment</div>
+                    <div class="text-[11px] text-slate-600 font-medium" data-en="Serving Roslindale, Hyde Park & Mattapan" data-es="Sirviendo a Roslindale, Hyde Park y Mattapan">Serving Roslindale, Hyde Park & Mattapan</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Emoji Badges -->
+            <div class="absolute -top-4 -right-4 bg-white px-4 py-2 rounded-2xl shadow-lg border border-slate-100 font-black text-xs text-purple-700 flex items-center gap-1.5 animate-bounce">
+              <span>🗣️</span> EN + ES
+            </div>
+            <div class="absolute -bottom-4 -left-4 bg-emerald-500 text-white px-4 py-2 rounded-2xl shadow-lg font-black text-xs flex items-center gap-1.5">
+              <span>🌟</span> 5.0 Star Rating
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 3. ABOUT / BILINGUAL CONCEPT -->
+  <section id="about" class="py-16 lg:py-24 bg-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-xs font-black text-purple-600 tracking-widest uppercase mb-2" data-en="OUR BILINGUAL PHILOSOPHY" data-es="NUESTRA FILOSOFÍA BILINGÜE">
+          OUR BILINGUAL PHILOSOPHY
+        </h2>
+        <h3 class="text-3xl sm:text-4xl font-black text-slate-900 font-display mb-4" data-en="Why Bilingual? Why Rainbow?" data-es="¿Por Qué Bilingüe? ¿Por Qué Rainbow?">
+          Why Bilingual? Why Rainbow?
+        </h3>
+        <p class="text-slate-600 text-base sm:text-lg font-medium" data-en="Early bilingual immersion boosts brain development, social skills, and executive function. At Bilingual Rainbow Daycare, every day is filled with songs, storybooks, and play in both English and Spanish!" data-es="La inmersión bilingüe temprana estimula el desarrollo cerebral, habilidades sociales y la función ejecutiva. ¡En Bilingual Rainbow Daycare, cada día está lleno de canciones, cuentos y juegos en inglés y español!">
+          Early bilingual immersion boosts brain development, social skills, and executive function. At Bilingual Rainbow Daycare, every day is filled with songs, storybooks, and play in both English and Spanish!
+        </p>
+      </div>
+
+      <!-- 3 Columns with Icons -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        
+        <!-- Column 1 -->
+        <div class="bg-red-50/60 p-8 rounded-3xl border border-red-100 hover:shadow-xl transition-all group">
+          <div class="w-16 h-16 rounded-2xl bg-red-500 text-white text-3xl flex items-center justify-center mb-6 shadow-md group-hover:scale-110 transition-transform">
+            🗣️
+          </div>
+          <h4 class="text-xl font-black text-slate-900 mb-3" data-en="English + Spanish Every Day" data-es="Inglés + Español Todos los Días">
+            English + Spanish Every Day
+          </h4>
+          <p class="text-slate-600 font-medium text-sm leading-relaxed mb-4" data-en="50/50 dual immersion model where kids naturally pick up native pronunciation, vocabulary, and bilingual confidence." data-es="Modelo de inmersión dual 50/50 donde los niños aprenden de forma natural pronunciación nativa, vocabulario y confianza bilingüe.">
+            50/50 dual immersion model where kids naturally pick up native pronunciation, vocabulary, and bilingual confidence.
+          </p>
+          <div class="bg-white/80 p-3 rounded-xl border border-red-200/60 text-xs text-red-900 font-semibold">
+            💬 "Hola, buenos días!" & "Good morning, friends!"
+          </div>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="bg-amber-50/60 p-8 rounded-3xl border border-amber-100 hover:shadow-xl transition-all group">
+          <div class="w-16 h-16 rounded-2xl bg-amber-500 text-white text-3xl flex items-center justify-center mb-6 shadow-md group-hover:scale-110 transition-transform">
+            🌈
+          </div>
+          <h4 class="text-xl font-black text-slate-900 mb-3" data-en="Rainbow Learning & Play" data-es="Aprendizaje y Juego Arcoíris">
+            Rainbow Learning & Play
+          </h4>
+          <p class="text-slate-600 font-medium text-sm leading-relaxed mb-4" data-en="Play-based curriculum rich in sensory art, music rhythm, nature exploration, and hands-on creative experiments." data-es="Currículo basado en el juego, rico en arte sensorial, ritmo musical, exploración de la naturaleza y experimentos creativos.">
+            Play-based curriculum rich in sensory art, music rhythm, nature exploration, and hands-on creative experiments.
+          </p>
+          <div class="bg-white/80 p-3 rounded-xl border border-amber-200/60 text-xs text-amber-900 font-semibold">
+            🎨 "Colores y números" / "Colors and counting"
+          </div>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="bg-blue-50/60 p-8 rounded-3xl border border-blue-100 hover:shadow-xl transition-all group">
+          <div class="w-16 h-16 rounded-2xl bg-blue-500 text-white text-3xl flex items-center justify-center mb-6 shadow-md group-hover:scale-110 transition-transform">
+            ❤️
+          </div>
+          <h4 class="text-xl font-black text-slate-900 mb-3" data-en="Home-Like Loving Environment" data-es="Ambiente Hogareño y Amoroso">
+            Home-Like Loving Environment
+          </h4>
+          <p class="text-slate-600 font-medium text-sm leading-relaxed mb-4" data-en="Safe, clean, nurturant home setting in Roslindale where every child receives individualized love, care, and attention." data-es="Hogar seguro, limpio y acogedor en Roslindale donde cada niño recibe amor, cuidado y atención personalizada.">
+            Safe, clean, nurturant home setting in Roslindale where every child receives individualized love, care, and attention.
+          </p>
+          <div class="bg-white/80 p-3 rounded-xl border border-blue-200/60 text-xs text-blue-900 font-semibold">
+            🏡 Roslindale, MA 02131
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Side-by-side Text Banner -->
+      <div class="bg-gradient-to-r from-purple-900 to-indigo-900 text-white rounded-3xl p-8 sm:p-12 shadow-2xl relative overflow-hidden">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
+          <div class="border-b md:border-b-0 md:border-r border-purple-700/60 pb-6 md:pb-0 md:pr-8">
+            <span class="text-xs font-black text-purple-300 tracking-wider uppercase mb-1 block">ENGLISH SUMMARY</span>
+            <h5 class="text-xl font-extrabold mb-2">Full Bilingual Enrichment</h5>
+            <p class="text-purple-100 text-sm leading-relaxed font-medium">
+              We guide toddlers and preschoolers to communicate fluently in both languages through interactive circle times, bilingual storytelling, music, and social play.
+            </p>
+          </div>
+          <div class="md:pl-4">
+            <span class="text-xs font-black text-purple-300 tracking-wider uppercase mb-1 block">RESUMEN EN ESPAÑOL</span>
+            <h5 class="text-xl font-extrabold mb-2">Enriquecimiento Bilingüe Total</h5>
+            <p class="text-purple-100 text-sm leading-relaxed font-medium">
+              Guiamos a niños pequeños y preescolares a comunicarse con fluidez en ambos idiomas a través de tiempos de círculo interactivos, cuentos bilingües, música y juego social.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 4. PROGRAMS -->
+  <section id="programs" class="py-16 lg:py-24 bg-slate-50 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-xs font-black text-emerald-600 tracking-widest uppercase mb-2" data-en="AGE-APPROPRIATE CARE" data-es="CUIDADO POR EDADES">
+          AGE-APPROPRIATE CARE
+        </h2>
+        <h3 class="text-3xl sm:text-4xl font-black text-slate-900 font-display mb-4" data-en="Our Daycare Programs" data-es="Nuestros Programas de Guardería">
+          Our Daycare Programs
+        </h3>
+        <p class="text-slate-600 text-base font-medium" data-en="Tailored daily structures for every stage of your child's early development." data-es="Estructuras diarias diseñadas para cada etapa del desarrollo temprano de su hijo.">
+          Tailored daily structures for every stage of your child's early development.
+        </p>
+      </div>
+
+      <!-- 4 Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Card 1: Infant -->
+        <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-md hover:shadow-xl transition-all flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-4xl">🍼</span>
+              <span class="text-xs font-black bg-pink-100 text-pink-700 px-3 py-1 rounded-full">Ages 1 - 2y</span>
+            </div>
+            <h4 class="text-xl font-black text-slate-900 mb-1" data-en="Infant Program" data-es="Programa Infantes">Infant Program</h4>
+            <div class="text-xs font-bold text-slate-500 mb-4" data-en="Mon - Fri: 7:30 AM - 5:30 PM" data-es="Lun - Vie: 7:30 AM - 5:30 PM">Mon - Fri: 7:30 AM - 5:30 PM</div>
+            <ul class="text-xs text-slate-600 space-y-2 mb-6 font-medium">
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-500 font-bold">✓</span>
+                <span data-en="Gentle motor skills & tummy time" data-es="Habilidades motoras y tiempo boca abajo">Gentle motor skills & tummy time</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-500 font-bold">✓</span>
+                <span data-en="First words & songs in EN/ES" data-es="Primeras palabras y canciones en EN/ES">First words & songs in EN/ES</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-500 font-bold">✓</span>
+                <span data-en="Individual feeding & nap routines" data-es="Rutinas de alimentación y siesta">Individual feeding & nap routines</span>
+              </li>
+            </ul>
+          </div>
+          <a href="https://wa.me/18573897214" target="_blank" class="w-full text-center py-2.5 rounded-xl bg-pink-50 hover:bg-pink-100 text-pink-700 font-extrabold text-xs transition-colors border border-pink-200" data-en="Inquire for Infant Spot" data-es="Consultar Cupo Infante">
+            Inquire for Infant Spot
+          </a>
+        </div>
+
+        <!-- Card 2: Toddler -->
+        <div class="bg-white rounded-3xl p-6 border-2 border-amber-300 shadow-lg hover:shadow-xl transition-all flex flex-col justify-between relative">
+          <div class="absolute -top-3 right-4 bg-amber-400 text-slate-900 font-black text-[10px] uppercase tracking-wider px-3 py-0.5 rounded-full shadow-xs">
+            POPULAR
+          </div>
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-4xl">🧸</span>
+              <span class="text-xs font-black bg-amber-100 text-amber-800 px-3 py-1 rounded-full">Ages 2 - 3y</span>
+            </div>
+            <h4 class="text-xl font-black text-slate-900 mb-1" data-en="Toddler Program" data-es="Programa Maternal">Toddler Program</h4>
+            <div class="text-xs font-bold text-slate-500 mb-4" data-en="Mon - Fri: 7:30 AM - 5:30 PM" data-es="Lun - Vie: 7:30 AM - 5:30 PM">Mon - Fri: 7:30 AM - 5:30 PM</div>
+            <ul class="text-xs text-slate-600 space-y-2 mb-6 font-medium">
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-500 font-bold">✓</span>
+                <span data-en="Bilingual circle time & storytelling" data-es="Tiempo de círculo y cuentos bilingües">Bilingual circle time & storytelling</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-500 font-bold">✓</span>
+                <span data-en="Color & shape recognition" data-es="Reconocimiento de colores y formas">Color & shape recognition</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-500 font-bold">✓</span>
+                <span data-en="Social sharing & playground play" data-es="Compartir social y juego al aire libre">Social sharing & playground play</span>
+              </li>
+            </ul>
+          </div>
+          <a href="https://wa.me/18573897214" target="_blank" class="w-full text-center py-2.5 rounded-xl bg-amber-400 hover:bg-amber-500 text-slate-900 font-extrabold text-xs transition-colors shadow-xs" data-en="Inquire for Toddler Spot" data-es="Consultar Cupo Maternal">
+            Inquire for Toddler Spot
+          </a>
+        </div>
+
+        <!-- Card 3: Preschool -->
+        <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-md hover:shadow-xl transition-all flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-4xl">🎒</span>
+              <span class="text-xs font-black bg-blue-100 text-blue-700 px-3 py-1 rounded-full">Ages 3 - 5y</span>
+            </div>
+            <h4 class="text-xl font-black text-slate-900 mb-1" data-en="Preschool Readiness" data-es="Preescolar y Preparación">Preschool Readiness</h4>
+            <div class="text-xs font-bold text-slate-500 mb-4" data-en="Mon - Fri: 7:30 AM - 5:30 PM" data-es="Lun - Vie: 7:30 AM - 5:30 PM">Mon - Fri: 7:30 AM - 5:30 PM</div>
+            <ul class="text-xs text-slate-600 space-y-2 mb-6 font-medium">
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-500 font-bold">✓</span>
+                <span data-en="Dual-language alphabet & numbers" data-es="Alfabeto y números en dos idiomas">Dual-language alphabet & numbers</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-500 font-bold">✓</span>
+                <span data-en="Kindergarten readiness activities" data-es="Actividades para el Kínder">Kindergarten readiness activities</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-500 font-bold">✓</span>
+                <span data-en="Science experiments & music" data-es="Experimentos de ciencia y música">Science experiments & music</span>
+              </li>
+            </ul>
+          </div>
+          <a href="https://wa.me/18573897214" target="_blank" class="w-full text-center py-2.5 rounded-xl bg-blue-50 hover:bg-blue-100 text-blue-700 font-extrabold text-xs transition-colors border border-blue-200" data-en="Inquire for Preschool Spot" data-es="Consultar Cupo Preescolar">
+            Inquire for Preschool Spot
+          </a>
+        </div>
+
+        <!-- Card 4: After School -->
+        <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-md hover:shadow-xl transition-all flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-4xl">🎨</span>
+              <span class="text-xs font-black bg-purple-100 text-purple-700 px-3 py-1 rounded-full">Ages 4 - 8y</span>
+            </div>
+            <h4 class="text-xl font-black text-slate-900 mb-1" data-en="After-School Care" data-es="Después de Escuela">After-School Care</h4>
+            <div class="text-xs font-bold text-slate-500 mb-4" data-en="Mon - Fri: 2:30 PM - 5:30 PM" data-es="Lun - Vie: 2:30 PM - 5:30 PM">Mon - Fri: 2:30 PM - 5:30 PM</div>
+            <ul class="text-xs text-slate-600 space-y-2 mb-6 font-medium">
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-500 font-bold">✓</span>
+                <span data-en="Homework support in EN & ES" data-es="Apoyo de tareas en EN y ES">Homework support in EN & ES</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-500 font-bold">✓</span>
+                <span data-en="Healthy snacks & juice" data-es="Meriendas saludables y jugos">Healthy snacks & juice</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-500 font-bold">✓</span>
+                <span data-en="Creative crafts & outdoor games" data-es="Manualidades y juegos al aire libre">Creative crafts & outdoor games</span>
+              </li>
+            </ul>
+          </div>
+          <a href="https://wa.me/18573897214" target="_blank" class="w-full text-center py-2.5 rounded-xl bg-purple-50 hover:bg-purple-100 text-purple-700 font-extrabold text-xs transition-colors border border-purple-200" data-en="Inquire for After School" data-es="Consultar Cupo Después de Escuela">
+            Inquire for After School
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 5. DAILY SCHEDULE -->
+  <section class="py-16 lg:py-24 bg-white relative">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-xs font-black text-blue-600 tracking-widest uppercase mb-2" data-en="STRUCTURED DAY" data-es="DÍA ESTRUCTURADO">
+          STRUCTURED DAY
+        </h2>
+        <h3 class="text-3xl sm:text-4xl font-black text-slate-900 font-display mb-4" data-en="Our Bilingual Daily Schedule" data-es="Nuestro Horario Diario Bilingüe">
+          Our Bilingual Daily Schedule
+        </h3>
+        <p class="text-slate-600 text-base font-medium" data-en="A balanced mix of active play, structured learning, quiet rest, and healthy meals." data-es="Una mezcla equilibrada de juego activo, aprendizaje estructurado, descanso y comidas saludables.">
+          A balanced mix of active play, structured learning, quiet rest, and healthy meals.
+        </p>
+      </div>
+
+      <!-- Schedule Timeline -->
+      <div class="space-y-4">
+        
+        <!-- Slot 1 -->
+        <div class="bg-slate-50 hover:bg-red-50/50 p-4 sm:p-5 rounded-2xl border border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3 transition-colors">
+          <div class="flex items-center gap-4">
+            <span class="w-12 h-12 rounded-xl bg-red-100 text-red-600 font-black text-lg flex items-center justify-center shrink-0">
+              8:00
+            </span>
+            <div>
+              <h5 class="font-extrabold text-slate-900 text-base" data-en="Arrival & Gentle Welcome" data-es="Llegada y Bienvenida Afectuosa">Arrival & Gentle Welcome</h5>
+              <p class="text-slate-500 text-xs font-medium" data-en="Free play, greeting friends in English & Spanish." data-es="Juego libre, saludando a amigos en inglés y español.">Free play, greeting friends in English & Spanish.</p>
+            </div>
+          </div>
+          <span class="text-xs font-bold text-red-700 bg-red-100/80 px-3 py-1 rounded-full self-start sm:self-center">
+            👋 Hello / ¡Hola!
+          </span>
+        </div>
+
+        <!-- Slot 2 -->
+        <div class="bg-slate-50 hover:bg-amber-50/50 p-4 sm:p-5 rounded-2xl border border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3 transition-colors">
+          <div class="flex items-center gap-4">
+            <span class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 font-black text-lg flex items-center justify-center shrink-0">
+              9:00
+            </span>
+            <div>
+              <h5 class="font-extrabold text-slate-900 text-base" data-en="Bilingual Circle Time & Songs" data-es="Tiempo de Círculo Bilingüe y Canciones">Bilingual Circle Time & Songs</h5>
+              <p class="text-slate-500 text-xs font-medium" data-en="Days of the week, weather, bilingual rhymes & counting." data-es="Días de la semana, clima, rimas bilingües y conteo.">Days of the week, weather, bilingual rhymes & counting.</p>
+            </div>
+          </div>
+          <span class="text-xs font-bold text-amber-800 bg-amber-100/80 px-3 py-1 rounded-full self-start sm:self-center">
+            🎵 Canta & Sing
+          </span>
+        </div>
+
+        <!-- Slot 3 -->
+        <div class="bg-slate-50 hover:bg-emerald-50/50 p-4 sm:p-5 rounded-2xl border border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3 transition-colors">
+          <div class="flex items-center gap-4">
+            <span class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 font-black text-lg flex items-center justify-center shrink-0">
+              10:00
+            </span>
+            <div>
+              <h5 class="font-extrabold text-slate-900 text-base" data-en="Outdoor Playground & Movement" data-es="Juego al Aire Libre y Movimiento">Outdoor Playground & Movement</h5>
+              <p class="text-slate-500 text-xs font-medium" data-en="Fresh air, gross motor games, sandbox & bubbles." data-es="Aire fresco, juegos de motricidad, arenero y burbujas.">Fresh air, gross motor games, sandbox & bubbles.</p>
+            </div>
+          </div>
+          <span class="text-xs font-bold text-emerald-800 bg-emerald-100/80 px-3 py-1 rounded-full self-start sm:self-center">
+            ☀️ Sol & Fresh Air
+          </span>
+        </div>
+
+        <!-- Slot 4 -->
+        <div class="bg-slate-50 hover:bg-blue-50/50 p-4 sm:p-5 rounded-2xl border border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3 transition-colors">
+          <div class="flex items-center gap-4">
+            <span class="w-12 h-12 rounded-xl bg-blue-100 text-blue-700 font-black text-lg flex items-center justify-center shrink-0">
+              11:30
+            </span>
+            <div>
+              <h5 class="font-extrabold text-slate-900 text-base" data-en="Healthy Organic Lunch" data-es="Almuerzo Orgánico Saludable">Healthy Organic Lunch</h5>
+              <p class="text-slate-500 text-xs font-medium" data-en="Nutritious balanced meals & table manners." data-es="Comidas nutritivas balanceadas y modales en la mesa.">Nutritious balanced meals & table manners.</p>
+            </div>
+          </div>
+          <span class="text-xs font-bold text-blue-800 bg-blue-100/80 px-3 py-1 rounded-full self-start sm:self-center">
+            🍎 Comida & Yummy
+          </span>
+        </div>
+
+        <!-- Slot 5 -->
+        <div class="bg-slate-50 hover:bg-purple-50/50 p-4 sm:p-5 rounded-2xl border border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3 transition-colors">
+          <div class="flex items-center gap-4">
+            <span class="w-12 h-12 rounded-xl bg-purple-100 text-purple-700 font-black text-lg flex items-center justify-center shrink-0">
+              12:30
+            </span>
+            <div>
+              <h5 class="font-extrabold text-slate-900 text-base" data-en="Rest & Quiet Nap Time" data-es="Tiempo de Descanso y Siesta">Rest & Quiet Nap Time</h5>
+              <p class="text-slate-500 text-xs font-medium" data-en="Cozy quiet room, soothing lullabies in EN/ES." data-es="Cuarto tranquilo y acogedor, nanas en EN/ES.">Cozy quiet room, soothing lullabies in EN/ES.</p>
+            </div>
+          </div>
+          <span class="text-xs font-bold text-purple-800 bg-purple-100/80 px-3 py-1 rounded-full self-start sm:self-center">
+            🌙 Sueño & Nap
+          </span>
+        </div>
+
+        <!-- Slot 6 -->
+        <div class="bg-slate-50 hover:bg-pink-50/50 p-4 sm:p-5 rounded-2xl border border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3 transition-colors">
+          <div class="flex items-center gap-4">
+            <span class="w-12 h-12 rounded-xl bg-pink-100 text-pink-700 font-black text-lg flex items-center justify-center shrink-0">
+              15:00
+            </span>
+            <div>
+              <h5 class="font-extrabold text-slate-900 text-base" data-en="Storytime & Afternoon Snack" data-es="Hora de Cuento y Merienda">Storytime & Afternoon Snack</h5>
+              <p class="text-slate-500 text-xs font-medium" data-en="Fresh fruit snacks and bilingual story reading." data-es="Frutas frescas y lectura de cuentos bilingües.">Fresh fruit snacks and bilingual story reading.</p>
+            </div>
+          </div>
+          <span class="text-xs font-bold text-pink-800 bg-pink-100/80 px-3 py-1 rounded-full self-start sm:self-center">
+            📖 Cuento & Story
+          </span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 6. PHOTOS / GALLERY -->
+  <section class="py-16 lg:py-24 bg-slate-50 border-y border-slate-200/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-xs font-black text-purple-600 tracking-widest uppercase mb-2" data-en="DAYCARE ENVIRONMENT" data-es="NUESTRA GUARDERÍA">
+          DAYCARE ENVIRONMENT
+        </h2>
+        <h3 class="text-3xl sm:text-4xl font-black text-slate-900 font-display mb-4" data-en="See Our Happy Rainbow Space" data-es="Conoce Nuestro Espacio Feliz">
+          See Our Happy Rainbow Space
+        </h3>
+        <p class="text-slate-600 text-base font-medium" data-en="Clean, bright, safe, and tailored for toddlers to learn and explore." data-es="Limpio, brillante, seguro y adaptado para que los niños aprendan y exploren.">
+          Clean, bright, safe, and tailored for toddlers to learn and explore.
+        </p>
+      </div>
+
+      <!-- 6 Photo Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Photo 1 -->
+        <div class="group relative overflow-hidden rounded-3xl bg-slate-200 aspect-[4/3] shadow-md hover:shadow-xl transition-all">
+          <img 
+            src="/src/assets/images/daycare_circle_time_1790135415891.jpg" 
+            alt="Bilingual story time circle time Roslindale daycare" 
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full flex flex-col items-center justify-center bg-blue-100 text-blue-800 p-4 text-center\'><span class=\'text-4xl mb-2\'>📚</span><span class=\'font-bold text-sm\'>Circle Time Story Reading</span></div>';"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-90 group-hover:opacity-100 transition-opacity p-6 flex items-end">
+            <div>
+              <span class="text-[10px] font-black uppercase tracking-wider text-amber-300">BILINGUAL STORYTIME</span>
+              <h5 class="text-white font-extrabold text-base" data-en="Cozy Circle Story Reading" data-es="Lectura de Cuentos en Círculo">Cozy Circle Story Reading</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 2 -->
+        <div class="group relative overflow-hidden rounded-3xl bg-slate-200 aspect-[4/3] shadow-md hover:shadow-xl transition-all">
+          <img 
+            src="/src/assets/images/daycare_outdoor_play_1790135430958.jpg" 
+            alt="Outdoor playground games and sunny play" 
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full flex flex-col items-center justify-center bg-emerald-100 text-emerald-800 p-4 text-center\'><span class=\'text-4xl mb-2\'>☀️</span><span class=\'font-bold text-sm\'>Outdoor Playground Fun</span></div>';"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-90 group-hover:opacity-100 transition-opacity p-6 flex items-end">
+            <div>
+              <span class="text-[10px] font-black uppercase tracking-wider text-emerald-300">OUTSIDE FUN</span>
+              <h5 class="text-white font-extrabold text-base" data-en="Safe Green Outdoor Playground" data-es="Parque Infantil al Aire Libre">Safe Green Outdoor Playground</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 3 -->
+        <div class="group relative overflow-hidden rounded-3xl bg-slate-200 aspect-[4/3] shadow-md hover:shadow-xl transition-all">
+          <img 
+            src="/src/assets/images/daycare_art_crafts_1790135444804.jpg" 
+            alt="Rainbow finger painting art crafts" 
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full flex flex-col items-center justify-center bg-pink-100 text-pink-800 p-4 text-center\'><span class=\'text-4xl mb-2\'>🎨</span><span class=\'font-bold text-sm\'>Rainbow Arts & Crafts</span></div>';"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-90 group-hover:opacity-100 transition-opacity p-6 flex items-end">
+            <div>
+              <span class="text-[10px] font-black uppercase tracking-wider text-pink-300">CREATIVE ART</span>
+              <h5 class="text-white font-extrabold text-base" data-en="Rainbow Finger Painting" data-es="Pintura de Dedos Arcoíris">Rainbow Finger Painting</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 4 -->
+        <div class="group relative overflow-hidden rounded-3xl bg-slate-200 aspect-[4/3] shadow-md hover:shadow-xl transition-all">
+          <img 
+            src="/src/assets/images/daycare_snack_time_1790135458110.jpg" 
+            alt="Healthy fresh organic snack time toddlers" 
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full flex flex-col items-center justify-center bg-amber-100 text-amber-800 p-4 text-center\'><span class=\'text-4xl mb-2\'>🍎</span><span class=\'font-bold text-sm\'>Healthy Organic Snacks</span></div>';"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-90 group-hover:opacity-100 transition-opacity p-6 flex items-end">
+            <div>
+              <span class="text-[10px] font-black uppercase tracking-wider text-amber-300">NUTRITION</span>
+              <h5 class="text-white font-extrabold text-base" data-en="Organic Fresh Fruit Snacks" data-es="Meriendas de Fruta Orgánica">Organic Fresh Fruit Snacks</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 5 -->
+        <div class="group relative overflow-hidden rounded-3xl bg-slate-200 aspect-[4/3] shadow-md hover:shadow-xl transition-all">
+          <img 
+            src="/src/assets/images/daycare_cozy_nap_1790135474210.jpg" 
+            alt="Quiet peaceful nap cots daycare" 
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full flex flex-col items-center justify-center bg-purple-100 text-purple-800 p-4 text-center\'><span class=\'text-4xl mb-2\'>🌙</span><span class=\'font-bold text-sm\'>Cozy Peaceful Nap Area</span></div>';"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-90 group-hover:opacity-100 transition-opacity p-6 flex items-end">
+            <div>
+              <span class="text-[10px] font-black uppercase tracking-wider text-purple-300">REST & RELAXATION</span>
+              <h5 class="text-white font-extrabold text-base" data-en="Peaceful Cozy Nap Room" data-es="Cuarto de Siesta Tranquilo">Peaceful Cozy Nap Room</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 6 -->
+        <div class="group relative overflow-hidden rounded-3xl bg-slate-200 aspect-[4/3] shadow-md hover:shadow-xl transition-all">
+          <img 
+            src="/src/assets/images/daycare_hero_kids_1790135397214.jpg" 
+            alt="Bilingual learning rainbow wooden block play" 
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full flex flex-col items-center justify-center bg-blue-100 text-blue-800 p-4 text-center\'><span class=\'text-4xl mb-2\'>🧩</span><span class=\'font-bold text-sm\'>Bilingual Building Blocks</span></div>';"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-90 group-hover:opacity-100 transition-opacity p-6 flex items-end">
+            <div>
+              <span class="text-[10px] font-black uppercase tracking-wider text-blue-300">EXPLORATION</span>
+              <h5 class="text-white font-extrabold text-base" data-en="Interactive Educational Toys" data-es="Juguetes Educativos Interactivos">Interactive Educational Toys</h5>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 7. PARENT REVIEWS -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-xs font-black text-amber-600 tracking-widest uppercase mb-2" data-en="LOVING TESTIMONIALS" data-es="TESTIMONIOS DE PADRES">
+          LOVING TESTIMONIALS
+        </h2>
+        <h3 class="text-3xl sm:text-4xl font-black text-slate-900 font-display mb-4" data-en="What Parents Say" data-es="Lo Que Dicen Los Padres">
+          What Parents Say
+        </h3>
+        <p class="text-slate-600 text-base font-medium" data-en="Trusted by families across Roslindale, Hyde Park, and Mattapan." data-es="Confiado por familias de Roslindale, Hyde Park y Mattapan.">
+          Trusted by families across Roslindale, Hyde Park, and Mattapan.
+        </p>
+      </div>
+
+      <!-- 3 Reviews Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Review 1 -->
+        <div class="bg-slate-50 p-8 rounded-3xl border border-slate-200/80 shadow-md relative flex flex-col justify-between">
+          <div>
+            <div class="text-amber-400 text-xl mb-4">🌟🌟🌟🌟🌟</div>
+            <p class="text-slate-700 italic text-sm leading-relaxed mb-6 font-medium">
+              "My daughter speaks Spanish now! Amazing daycare. She comes home every single day singing new Spanish songs and counting numbers in both languages."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-slate-200">
+            <div class="w-10 h-10 rounded-full bg-red-400 text-white font-black text-sm flex items-center justify-center">
+              MS
+            </div>
+            <div>
+              <div class="font-extrabold text-slate-900 text-sm">Maria S.</div>
+              <div class="text-xs text-slate-500 font-semibold">Roslindale, MA</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="bg-slate-50 p-8 rounded-3xl border border-slate-200/80 shadow-md relative flex flex-col justify-between">
+          <div>
+            <div class="text-amber-400 text-xl mb-4">🌟🌟🌟🌟🌟</div>
+            <p class="text-slate-700 italic text-sm leading-relaxed mb-6 font-medium">
+              "The loving staff and bilingual immersion have given my son so much confidence before kindergarten. Truly a gem for families in Hyde Park!"
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-slate-200">
+            <div class="w-10 h-10 rounded-full bg-blue-500 text-white font-black text-sm flex items-center justify-center">
+              DR
+            </div>
+            <div>
+              <div class="font-extrabold text-slate-900 text-sm">David R.</div>
+              <div class="text-xs text-slate-500 font-semibold">Hyde Park, MA</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="bg-slate-50 p-8 rounded-3xl border border-slate-200/80 shadow-md relative flex flex-col justify-between">
+          <div>
+            <div class="text-amber-400 text-xl mb-4">🌟🌟🌟🌟🌟</div>
+            <p class="text-slate-700 italic text-sm leading-relaxed mb-6 font-medium">
+              "A true home away from home. Safe, clean, bright, and my kids love going every single morning. I couldn't ask for a better daycare."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-slate-200">
+            <div class="w-10 h-10 rounded-full bg-purple-500 text-white font-black text-sm flex items-center justify-center">
+              SM
+            </div>
+            <div>
+              <div class="font-extrabold text-slate-900 text-sm">Sofia M.</div>
+              <div class="text-xs text-slate-500 font-semibold">Mattapan, MA</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 8. PAYMENT / PRICING SECTION (id="pay") - MOST IMPORTANT -->
+  <section id="pay" class="py-16 lg:py-24 bg-gradient-to-b from-slate-900 to-indigo-950 text-white relative overflow-hidden">
+    <!-- Decorative background elements -->
+    <div class="absolute -top-32 -left-32 w-96 h-96 bg-purple-600/20 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-32 -right-32 w-96 h-96 bg-emerald-600/20 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Urgency Banner -->
+      <div class="bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 text-slate-900 font-black text-xs sm:text-sm py-2.5 px-4 rounded-full text-center mb-8 shadow-lg max-w-xl mx-auto flex items-center justify-center gap-2">
+        <span>⚡</span>
+        <span data-en="Special Promotion: Offer ends tonight 11:59 PM for Roslindale daycares" data-es="Promoción Especial: La oferta termina esta noche a las 11:59 PM para guarderías de Roslindale">Special Promotion: Offer ends tonight 11:59 PM for Roslindale daycares</span>
+      </div>
+
+      <!-- Centered Pricing Card -->
+      <div class="bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-6 sm:p-10 shadow-2xl relative text-center">
+        
+        <div class="inline-block bg-emerald-500 text-white text-xs font-black uppercase tracking-widest px-4 py-1.5 rounded-full mb-6 shadow-md">
+          COMPLETE WEBSITE & MARKETING PACKAGE
+        </div>
+
+        <h3 class="text-2xl sm:text-4xl font-black font-display mb-2 text-white">
+          Bilingual Rainbow Daycare Website Package
+        </h3>
+        
+        <p class="text-slate-300 text-sm sm:text-base font-medium mb-8 max-w-lg mx-auto">
+          Get your custom daycare website live today! Designed specifically to attract local parents and bring direct calls & WhatsApp messages.
+        </p>
+
+        <!-- Price Display -->
+        <div class="flex items-center justify-center gap-4 mb-8">
+          <span class="text-2xl sm:text-3xl text-slate-400 line-through font-extrabold">$400</span>
+          <span class="text-5xl sm:text-6xl font-black text-emerald-400 font-display tracking-tight">$200</span>
+          <span class="bg-red-500 text-white font-black text-xs px-3 py-1 rounded-full uppercase tracking-wider">
+            50% OFF TODAY
+          </span>
+        </div>
+
+        <!-- Included Features Checklist -->
+        <div class="bg-slate-900/60 rounded-2xl p-6 text-left max-w-md mx-auto mb-8 border border-white/10 space-y-3">
+          <div class="flex items-center gap-3 text-sm font-semibold text-slate-200">
+            <span class="w-5 h-5 rounded-full bg-emerald-500 text-white flex items-center justify-center text-xs font-bold shrink-0">✓</span>
+            <span>Bilingual Website (EN/ES switcher)</span>
+          </div>
+          <div class="flex items-center gap-3 text-sm font-semibold text-slate-200">
+            <span class="w-5 h-5 rounded-full bg-emerald-500 text-white flex items-center justify-center text-xs font-bold shrink-0">✓</span>
+            <span>Photos + Programs + WhatsApp Button</span>
+          </div>
+          <div class="flex items-center gap-3 text-sm font-semibold text-slate-200">
+            <span class="w-5 h-5 rounded-full bg-emerald-500 text-white flex items-center justify-center text-xs font-bold shrink-0">✓</span>
+            <span>Google Maps + "Bilingual Daycare Near Me" SEO</span>
+          </div>
+          <div class="flex items-center gap-3 text-sm font-semibold text-slate-200">
+            <span class="w-5 h-5 rounded-full bg-emerald-500 text-white flex items-center justify-center text-xs font-bold shrink-0">✓</span>
+            <span>Contact Form straight to your phone</span>
+          </div>
+          <div class="flex items-center gap-3 text-sm font-semibold text-slate-200">
+            <span class="w-5 h-5 rounded-full bg-emerald-500 text-white flex items-center justify-center text-xs font-bold shrink-0">✓</span>
+            <span>Free .com Domain + Hosting Setup</span>
+          </div>
+          <div class="flex items-center gap-3 text-sm font-semibold text-slate-200">
+            <span class="w-5 h-5 rounded-full bg-emerald-500 text-white flex items-center justify-center text-xs font-bold shrink-0">✓</span>
+            <span>1 Month Free Support & Updates</span>
+          </div>
+        </div>
+
+        <!-- REQUIRED PAY BUTTONS -->
+        <div class="max-w-md mx-auto space-y-3 mb-6">
+          <a href="https://buy.stripe.com/test_12345" target="_blank" style="background:#00C853;color:white;padding:18px 40px;border-radius:50px;font-weight:900;font-size:20px;display:block;text-align:center;text-decoration:none;margin-bottom:10px;">💳 PAY $200 NOW - Make Website Live</a>
+          
+          <a href="https://paypal.me/" target="_blank" style="background:#0070BA;color:white;padding:14px 40px;border-radius:50px;font-weight:700;font-size:16px;display:block;text-align:center;text-decoration:none;">Pay with PayPal</a>
+        </div>
+
+        <!-- Security text -->
+        <p class="text-slate-400 text-xs font-semibold flex items-center justify-center gap-2">
+          <span>🔒</span>
+          <span>Secure by Stripe - Visa, Mastercard, Apple Pay | Instant Receipt</span>
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 9. CONTACT -->
+  <section id="contact" class="py-16 lg:py-24 bg-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-xs font-black text-blue-600 tracking-widest uppercase mb-2" data-en="VISIT & ENROLL" data-es="VISÍTANOS Y MATRICULA">
+          VISIT & ENROLL
+        </h2>
+        <h3 class="text-3xl sm:text-4xl font-black text-slate-900 font-display mb-4" data-en="Contact & Location" data-es="Contacto y Ubicación">
+          Contact & Location
+        </h3>
+        <p class="text-slate-600 text-base font-medium" data-en="We would love to welcome you for a daycare tour!" data-es="¡Nos encantaría darte la bienvenida para un recorrido de la guardería!">
+          We would love to welcome you for a daycare tour!
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+        
+        <!-- Contact Details & Map -->
+        <div class="lg:col-span-5 space-y-6">
+          
+          <div class="bg-slate-50 p-6 rounded-3xl border border-slate-200 space-y-4">
+            
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-blue-500 text-white flex items-center justify-center text-lg shrink-0">
+                📍
+              </div>
+              <div>
+                <h5 class="font-extrabold text-slate-900 text-sm" data-en="Daycare Location" data-es="Ubicación de la Guardería">Daycare Location</h5>
+                <p class="text-slate-600 text-xs font-medium">Roslindale, Boston MA 02131<br/><span class="text-slate-400">(Serving Roslindale, Hyde Park & Mattapan)</span></p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-emerald-500 text-white flex items-center justify-center text-lg shrink-0">
+                📞
+              </div>
+              <div>
+                <h5 class="font-extrabold text-slate-900 text-sm" data-en="Phone & Call" data-es="Teléfono">Phone & Call</h5>
+                <a href="tel:+18573897214" class="text-blue-600 font-extrabold text-sm hover:underline">+1 (857) 389-7214</a>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-purple-500 text-white flex items-center justify-center text-lg shrink-0">
+                ⏰
+              </div>
+              <div>
+                <h5 class="font-extrabold text-slate-900 text-sm" data-en="Operating Hours" data-es="Horario de Atención">Operating Hours</h5>
+                <p class="text-slate-600 text-xs font-medium" data-en="Monday - Friday: 7:30 AM - 5:30 PM" data-es="Lunes - Viernes: 7:30 AM - 5:30 PM">Monday - Friday: 7:30 AM - 5:30 PM</p>
+              </div>
+            </div>
+
+            <div class="pt-2">
+              <a href="https://wa.me/18573897214" target="_blank" class="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-extrabold text-sm py-3 px-4 rounded-2xl flex items-center justify-center gap-2 transition-colors shadow-sm">
+                <span>💬</span>
+                <span data-en="Chat Directly on WhatsApp" data-es="Chatear por WhatsApp">Chat Directly on WhatsApp</span>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Google Maps Iframe -->
+          <div class="rounded-3xl overflow-hidden border border-slate-200 shadow-md aspect-video">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2952.128795412351!2d-71.12875152346761!3d42.28315807120023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37ef39ddcbf1f%3A0x8e860bc0bf34ec62!2sRoslindale%2C%20Boston%2C%20MA%2002131!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+
+        </div>
+
+        <!-- Contact Form -->
+        <div class="lg:col-span-7 bg-slate-50 p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-md">
+          <h4 class="text-xl font-black text-slate-900 mb-2" data-en="Schedule a Tour / Contact Us" data-es="Agendar Visita / Contáctanos">
+            Schedule a Tour / Contact Us
+          </h4>
+          <p class="text-xs text-slate-500 font-medium mb-6" data-en="Fill out this quick form and we will reach back out within 2 hours!" data-es="¡Completa este formulario y te responderemos en menos de 2 horas!">
+            Fill out this quick form and we will reach back out within 2 hours!
+          </p>
+
+          <form id="contactForm" onsubmit="handleContactSubmit(event)" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1" data-en="Parent Name *" data-es="Nombre del Padre/Madre *">Parent Name *</label>
+                <input type="text" required placeholder="e.g. Sarah Miller" class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" />
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1" data-en="Phone Number *" data-es="Teléfono *">Phone Number *</label>
+                <input type="tel" required placeholder="(857) 389-7214" class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" />
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1" data-en="Child's Age" data-es="Edad del Niño/a">Child's Age</label>
+                <select class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all">
+                  <option value="1-2">Infant (1 - 2 years)</option>
+                  <option value="2-3">Toddler (2 - 3 years)</option>
+                  <option value="3-5">Preschool (3 - 5 years)</option>
+                  <option value="4-8">After-School (4 - 8 years)</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1" data-en="Desired Start Date" data-es="Fecha de Inicio">Desired Start Date</label>
+                <input type="date" class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1" data-en="Message / Questions" data-es="Mensaje / Preguntas">Message / Questions</label>
+              <textarea rows="3" placeholder="Tell us about your child or any special requirements..." class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"></textarea>
+            </div>
+
+            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-extrabold text-sm py-3.5 rounded-xl shadow-md transition-all">
+              <span data-en="Send Message & Request Tour" data-es="Enviar Mensaje y Solicitar Visita">Send Message & Request Tour</span>
+            </button>
+          </form>
+
+          <div id="contactSuccessMsg" class="hidden mt-4 p-4 rounded-xl bg-emerald-100 border border-emerald-300 text-emerald-900 text-xs font-bold text-center">
+            🎉 Thank you! Your request has been received. We will call or WhatsApp you shortly!
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 10. FOOTER -->
+  <footer class="bg-slate-900 text-white py-12 border-t-4 border-amber-400">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 items-center">
+        
+        <div>
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-3xl">🌈</span>
+            <span class="font-black text-xl rainbow-text font-display">Bilingual Rainbow Daycare</span>
+          </div>
+          <p class="text-slate-400 text-xs font-medium">
+            Roslindale, Boston, MA 02131 | Serving Roslindale, Hyde Park & Mattapan.<br/>
+            Phone: +1 (857) 389-7214
+          </p>
+        </div>
+
+        <div class="text-center">
+          <p class="text-slate-400 text-xs font-semibold mb-2" data-en="Keywords: Bilingual Daycare Near Me | Spanish Daycare Roslindale" data-es="Palabras Clave: Guardería Bilingüe Cerca de Mí | Guardería en Español Roslindale">
+            Keywords: "Bilingual Daycare Near Me" | "Spanish Daycare Roslindale"
+          </p>
+        </div>
+
+        <div class="flex justify-start md:justify-end">
+          <a href="#pay" class="bg-emerald-500 hover:bg-emerald-600 text-white font-black text-xs px-5 py-3 rounded-full shadow-md transition-all">
+            💳 Owner Pay $200 & Go Live
+          </a>
+        </div>
+
+      </div>
+
+      <div class="pt-8 border-t border-slate-800 text-center text-xs text-slate-500 font-semibold">
+        © 2026 Bilingual Rainbow Daycare. All Rights Reserved. Loving English & Spanish Dual Immersion Childcare.
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- STICKY BOTTOM BAR ON MOBILE (position:fixed bottom:0) -->
+  <div class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-slate-900/95 backdrop-blur-md border-t border-slate-700 px-4 py-2.5 flex items-center justify-between shadow-2xl">
+    <div>
+      <div class="text-[10px] text-slate-400 font-extrabold uppercase" data-en="Website Offer" data-es="Oferta de Sitio Web">Website Offer</div>
+      <div class="text-lg font-black text-emerald-400 leading-none">$200 <span class="text-[10px] text-slate-300 font-semibold">One-Time</span></div>
+    </div>
+    <a href="#pay" class="bg-emerald-500 hover:bg-emerald-600 text-white font-black text-xs px-5 py-2.5 rounded-full pulse-glow flex items-center gap-1.5 shadow-lg">
+      <span>💳</span>
+      <span data-en="Pay Now & Go Live" data-es="Pagar $200 Ahora">Pay Now & Go Live</span>
+    </a>
+  </div>
+
+
+  <!-- FLOATING WHATSAPP BUTTON (Bottom Right) -->
+  <a href="https://wa.me/18573897214" target="_blank" rel="noopener noreferrer" class="fixed bottom-20 md:bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl hover:scale-110 transition-all border-2 border-white pulse-glow" title="Chat on WhatsApp">
+    💬
+  </a>
+
+
+  <!-- JAVASCRIPT LOGIC (Language Switcher & Form Handling) -->
+  <script>
+    let currentLang = 'EN';
+
+    function toggleLanguage() {
+      currentLang = currentLang === 'EN' ? 'ES' : 'EN';
+      
+      const langEnLabel = document.getElementById('langEnLabel');
+      const langEsLabel = document.getElementById('langEsLabel');
+      
+      if (currentLang === 'ES') {
+        langEnLabel.className = 'text-slate-400 font-bold';
+        langEsLabel.className = 'text-blue-600 font-black';
+      } else {
+        langEnLabel.className = 'text-blue-600 font-black';
+        langEsLabel.className = 'text-slate-400 font-bold';
+      }
+
+      // Toggle Hero Headline & Subtext specifically
+      const heroHeadline = document.getElementById('heroHeadline');
+      const heroSub = document.getElementById('heroSub');
+
+      if (currentLang === 'ES') {
+        heroHeadline.textContent = "¡Donde Pequeños Corazones Aprenden Dos Idiomas! 🌈";
+        heroSub.textContent = "Guardería Bilingüe con Amor en Roslindale - Inglés y Español Diario | Edades 1-5";
+      } else {
+        heroHeadline.textContent = "Where Little Hearts Learn Two Languages! 🌈";
+        heroSub.textContent = "Loving Bilingual Daycare in Roslindale - English & Spanish Daily | Ages 1-5";
+      }
+
+      // Update all data-en / data-es elements across the DOM
+      const bilingualElements = document.querySelectorAll('[data-en][data-es]');
+      bilingualElements.forEach(el => {
+        if (currentLang === 'ES') {
+          el.textContent = el.getAttribute('data-es');
+        } else {
+          el.textContent = el.getAttribute('data-en');
+        }
+      });
+    }
+
+    function handleContactSubmit(event) {
+      event.preventDefault();
+      const msg = document.getElementById('contactSuccessMsg');
+      msg.classList.remove('hidden');
+      event.target.reset();
+      setTimeout(() => {
+        msg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 100);
+    }
+  </script>
+
+</body>
+</html>
